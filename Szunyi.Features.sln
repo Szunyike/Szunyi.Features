@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Szunyi.Features", "Szunyi.Features\Szunyi.Features.vbproj", "{5FFC728C-F2BB-48DE-BCD4-BB25F860BFDD}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Szunyi.Common", "..\Szunyi.Common\Szunyi.Common\Szunyi.Common.vbproj", "{D2D39939-3EAC-4599-BF5B-41228D7E3BBF}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Szunyi.BLs", "..\Szunyi.Locations\Szunyi.BLs\Szunyi.BLs.vbproj", "{4D7F53A1-D934-45FC-BDB2-4ADE6B027F46}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{5FFC728C-F2BB-48DE-BCD4-BB25F860BFDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FFC728C-F2BB-48DE-BCD4-BB25F860BFDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FFC728C-F2BB-48DE-BCD4-BB25F860BFDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2D39939-3EAC-4599-BF5B-41228D7E3BBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2D39939-3EAC-4599-BF5B-41228D7E3BBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2D39939-3EAC-4599-BF5B-41228D7E3BBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2D39939-3EAC-4599-BF5B-41228D7E3BBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D7F53A1-D934-45FC-BDB2-4ADE6B027F46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D7F53A1-D934-45FC-BDB2-4ADE6B027F46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D7F53A1-D934-45FC-BDB2-4ADE6B027F46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D7F53A1-D934-45FC-BDB2-4ADE6B027F46}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -44,8 +44,18 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bio.Core, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NetBio.Core.3.0.0-alpha\lib\netstandard2.0\Bio.Core.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Forms.DataVisualization.Design" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -64,7 +74,15 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.vb" />
+    <Compile Include="Common.vb" />
+    <Compile Include="Comparers.vb" />
+    <Compile Include="Convert.vb" />
+    <Compile Include="ExtFeature.vb" />
+    <Compile Include="GenBankMetaData_Manipulatipon.vb" />
+    <Compile Include="Iterator_Sort.vb" />
+    <Compile Include="Manipulation.vb" />
+    <Compile Include="Merge.vb" />
+    <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -99,6 +117,20 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Szunyi.Common\Szunyi.Common\Szunyi.Common.vbproj">
+      <Project>{d2d39939-3eac-4599-bf5b-41228d7e3bbf}</Project>
+      <Name>Szunyi.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Szunyi.Locations\Szunyi.BLs\Szunyi.BLs.vbproj">
+      <Project>{4d7f53a1-d934-45fc-bdb2-4ade6b027f46}</Project>
+      <Name>Szunyi.BLs</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
