@@ -1,4 +1,6 @@
 ﻿Imports Bio.IO.GenBank
+Imports Szunyi.Location
+
 
 Public Class Iterator
     Public Shared Function Get_All_Types(Features As List(Of FeatureItem)) As List(Of String)
@@ -206,3 +208,12 @@ Public Class Sort
         End If
     End Function
 End Class
+Namespace Sorters
+    Public Class ByLocusTag
+        Implements IComparer(Of FeatureItem)
+
+        Public Function Compare(x As FeatureItem, y As FeatureItem) As Integer Implements IComparer(Of FeatureItem).Compare
+            Return x.Get_Qulifier_Values(StandardQualifierNames.LocusTag).CompareTo(y.Get_Qulifier_Values(StandardQualifierNames.LocusTag))
+        End Function
+    End Class
+End Namespace

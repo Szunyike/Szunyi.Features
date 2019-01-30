@@ -49,6 +49,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Windows" />
     <Reference Include="System.Windows.Forms">
       <Private>True</Private>
@@ -75,14 +76,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common.vb" />
-    <Compile Include="Comparers.vb" />
-    <Compile Include="Convert.vb" />
-    <Compile Include="ExtFeature.vb" />
-    <Compile Include="GenBankMetaData_Manipulatipon.vb" />
+    <Compile Include="Extensions.vb" />
+    <Compile Include="GFF.vb" />
     <Compile Include="Iterator_Sort.vb" />
-    <Compile Include="Manipulation.vb" />
     <Compile Include="Merge.vb" />
-    <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -127,6 +124,14 @@
     <ProjectReference Include="..\..\Szunyi.Locations\Szunyi.BLs\Szunyi.BLs.vbproj">
       <Project>{4d7f53a1-d934-45fc-bdb2-4ade6b027f46}</Project>
       <Name>Szunyi.BLs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Szunyi.Location\Szunyi.Location\Szunyi.Location.vbproj">
+      <Project>{34311ba4-2e64-4c92-bde7-c026ff2ee0b9}</Project>
+      <Name>Szunyi.Location</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Szunyi.Sequences\Szunyi.Sequences\Szunyi.Sequences.vbproj">
+      <Project>{b4503b4b-25d2-4580-84b8-febd08b9af11}</Project>
+      <Name>Szunyi.Sequences</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
