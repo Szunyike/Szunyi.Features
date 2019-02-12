@@ -2,7 +2,9 @@
 Imports System.Text.RegularExpressions
 Imports Bio
 Imports Bio.IO.GenBank
-Imports Szunyi.Location
+Imports Szunyi.Common
+Imports Szunyi.Location.bls
+
 
 Public Class Common
 

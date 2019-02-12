@@ -1,4 +1,5 @@
 ﻿Imports Bio.IO.GenBank
+Imports Szunyi.Common
 Imports Szunyi.Location
 
 

@@ -1,5 +1,6 @@
 ﻿Imports System.Runtime.CompilerServices
 Imports Bio.IO.GenBank
+Imports Szunyi.Common
 Imports Szunyi.Common.Extensions
 Imports Szunyi.Location
 Imports Szunyi.Sequences.Extensions
@@ -197,7 +198,7 @@ Public Module Extensions
     ''' <summary>
     ''' Iterator Intron Locations From Sequence
     ''' </summary>
-    ''' <param name="Feat"></param>
+    ''' <param name="Seq"></param>
     ''' <returns></returns>
     <Extension()>
     Public Iterator Function Get_Introns(Seq As Bio.ISequence) As IEnumerable(Of ILocation)
@@ -310,7 +311,7 @@ Public Module Extensions
 #End Region
 
     ''' <summary>
-    ''' Return in order LocusTag,GeneSymbol,Product,Note,Label or Empty String
+    ''' Return in order LocusTag,GeneSymbol,Product,Note,Label or Empty String chr(34) is trimmed
     ''' </summary>
     ''' <param name="Feat"></param>
     ''' <returns></returns>
@@ -1147,19 +1148,7 @@ Public Module Extensions
         Next
         Return str.ToString
     End Function
-    ''' <summary>
-    ''' Convert a Sequence into it String Representation
-    ''' </summary>
-    ''' <param name="Seq"></param>
-    ''' <returns></returns>
-    <Extension()>
-    Public Function ConvertToString(Seq As Bio.ISequence) As String
-        Dim str As New System.Text.StringBuilder
-        For i1 = 0 To Seq.Count - 1
-            str.Append(ChrW(Seq(i1)))
-        Next
-        Return str.ToString
-    End Function
+
 
 #End Region
 
